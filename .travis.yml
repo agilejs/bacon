@@ -22,6 +22,7 @@ before_script:
 deploy:
   provider: heroku
   app: agilejs-bacon
+  api_key:
   - secure: ! 'cHT7dpraAuoaSk/DaxEYLY8LLGPIa+fg15gvwgUuF1QWQGNfMZ89/dEavoKr
       ohjlJY6dJ3vFYWfd6izs5m67NhsqFSBNy21Nj4oiRBe+7j2v/zAE+0Ew9a2G
       +jiQkLb5UXABw2uJvxqCbhFg3AkQS/JuhPkWyN1jaxAUTd7eRSI='
