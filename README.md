@@ -1,9 +1,9 @@
 # Movie Database - NodeJS version
-[![Build Status](https://travis-ci.org/codecentric/movie-database-node.png)](https://travis-ci.org/codecentric/movie-database-node)
+[![Build Status](https://travis-ci.org/agilejs/bacon.png)](https://travis-ci.org/agilejs/bacon)
 
 Another version of the legendary movie database. This time with NodeJS. The app
 is being deployed to Heroku after every push. Feel free to check it out:
-[http://movie-database-node.herokuapp.com/](http://movie-database-node.herokuapp.com/)!
+[http://agilejs-bacon.herokuapp.com/](http://agilejs-bacon.herokuapp.com/)!
 
 *More documentation is available through [http://codecentric.github.io/movie-database-node](http://codecentric.github.io/movie-database-node)*.
 
@@ -26,10 +26,6 @@ documented [.travis.yml](.travis.yml).
 
 Deployment on Heroku is also easy. Just follow the [Getting started with Heroku and NodeJS guide](https://devcenter.heroku.com/articles/nodejs).
 If you want your application to be deployed continuously, whenever a Travis-CI job succeeds, you have to encrypt your Heroku API Key and save it in the `.travis.yml` according to the [Travis CI documentation](http://about.travis-ci.org/docs/user/deployment/heroku/):
-
-## Documentation
-
-You can find additional information about the used technologies in the `docs` directory.
 
 ## System requirements
 
