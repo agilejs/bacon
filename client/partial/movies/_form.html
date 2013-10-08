@@ -12,18 +12,33 @@
              required>
     <small class="error"
         ng-show="addMovieForm.title.$error.required">
-        Your name is required.
+        The title is required.
     </small>
     </div>
   </div>
 <div class="control-group">
     <label class="control-label" for="inputReleaseYear">Release Year</label>
     <div class="controls">
-      <input type="text"
+      <input type="number"
              id="inputReleaseYear"
              name="release"
              class="input-block-level"
-             ng-model="movie.release">
+             ng-model="movie.release"
+             ng-minlength=4
+             min=1900
+             required>
+      <small class="error"
+        ng-show="addMovieForm.release.$error.required">
+        The release year is required.
+    </small>
+    <small class="error"
+        ng-show="addMovieForm.release.$error.minlength">
+        The release year must be at least 4 digits long.
+    </small>
+    <small class="error"
+        ng-show="addMovieForm.release.$error.min">
+        The release year must later then 1900 (>1900).
+    </small>
     </div>
 </div>
 <div class="control-group">
