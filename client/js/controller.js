@@ -3,7 +3,11 @@ function AppCtrl ($scope) {
     $scope.title = 'The Movie Database';
 }
 
-function WelcomeCtrl () {
+function WelcomeCtrl ($scope, moviesResponse) {
+    'use strict'
+    $scope.movies = moviesResponse.data;
+    $scope.predicate = '-title';
+    $scope.reverse = 'true';
 }
 
 function MoviesListCtrl ($scope, $location, moviesResponse) {
