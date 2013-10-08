@@ -1,4 +1,4 @@
-<form class="form-horizontal">
+<form name="addMovieForm" class="form-horizontal" novalidate ng-submit="save(movie)">
   <div class="control-group">
     <label class="control-label" for="inputTitle">Title</label>
     <div class="controls">
@@ -6,8 +6,14 @@
              id="inputTitle"
              name="title"
              class="input-block-level"
+             placeholder="Title of the movie.."
              autofocus
-             ng-model="movie.title">
+             ng-model="movie.title"
+             required>
+    <small class="error"
+        ng-show="addMovieForm.title.$error.required">
+        Your name is required.
+    </small>
     </div>
   </div>
   <div class="control-group">
@@ -17,6 +23,7 @@
                 id="inputDescription"
                 name="description"
                 class="input-block-level"
+                placeholder="Description of the movie.."
                 ng-model="movie.description">
       </textarea>
     </div>
@@ -24,7 +31,7 @@
   <div class="form-actions">
     <button type="submit"
             class="btn btn-primary"
-            ng-click="save(movie)">
+            ng-disabled="addMovieForm.$invalid">
       Save
     </button>
     <a href="/movies/{{movie.id}}" class="btn">Cancel</a>
