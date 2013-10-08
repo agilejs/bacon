@@ -13,6 +13,8 @@ function WelcomeCtrl ($scope, moviesResponse) {
 function MoviesListCtrl ($scope, $location, moviesResponse) {
     'use strict';
     $scope.movies = moviesResponse.data;
+    $scope.predicate = '-title';
+    $scope.reverse = 'true';
     $scope.add = function () {
         $location.path('/movies/new');
     };
