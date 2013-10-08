@@ -3,15 +3,18 @@ var actor =  document.getElementById('li_actors');
 var home =  document.getElementById('li_home');
 var controller = document.URL.split('/');
 
-if(controller[3]==='movies'){
-    movie.className = 'active';
-}
+window.onload = function(){
+    'use strict';
+    if(controller[3]==='movies'){
+        movie.className = 'active';
+    }
 else if  (controller[3]==='actors'){
-    actor.className = 'active';
-}
+        actor.className = 'active';
+    }
 else{
-    home.className = 'active';
-}
+        home.className = 'active';
+    }
+};
 
 function clear(){
     'use strict';
