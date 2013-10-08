@@ -4,7 +4,7 @@ function AppCtrl ($scope) {
 }
 
 function WelcomeCtrl ($scope, moviesResponse) {
-    'use strict'
+    'use strict';
     $scope.movies = moviesResponse.data;
     $scope.predicate = '-title';
     $scope.reverse = 'true';
