@@ -14,6 +14,20 @@ describe('controller', function () {
         });
     });
 
+    describe('WelcomeCtrl', function () {
+
+        it('should set list of movies on scope', function () {
+            var scope = {};
+            var moviesResponse = {
+                data: 42
+            };
+
+            WelcomeCtrl(scope, moviesResponse);
+
+            expect(scope.movies).to.deep.equal(moviesResponse.data);
+        });
+    });
+
     describe('MoviesListCtrl', function () {
         it('should set list of movies on scope', function () {
             var scope = {};

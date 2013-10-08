@@ -107,7 +107,9 @@ module.exports = function (grunt) {
                         it: false,
                         beforeEach: false,
                         input: false,
-                        repeater: false
+                        repeater: false,
+                        binding: false
+
                     }
                 }
             },
