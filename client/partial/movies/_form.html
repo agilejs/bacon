@@ -16,7 +16,17 @@
     </small>
     </div>
   </div>
-  <div class="control-group">
+<div class="control-group">
+    <label class="control-label" for="inputReleaseYear">Release Year</label>
+    <div class="controls">
+      <input type="text"
+             id="inputReleaseYear"
+             name="release"
+             class="input-block-level"
+             ng-model="movie.release">
+    </div>
+</div>
+<div class="control-group">
     <label class="control-label" for="inputDescription">Description</label>
     <div class="controls">
       <textarea rows="5"

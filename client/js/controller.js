@@ -6,7 +6,7 @@ function AppCtrl ($scope) {
 function WelcomeCtrl ($scope, moviesResponse) {
     'use strict';
     $scope.movies = moviesResponse.data;
-    $scope.predicate = '-title';
+    $scope.predicate = 'title';
     $scope.reverse = 'true';
 }
 
@@ -41,7 +41,6 @@ function MoviesAddCtrl ($scope, $http, $location) {
 function MovieDetailCtrl ($scope, $http, $location, moviesResponse) {
     'use strict';
     $scope.movie = moviesResponse.data;
-
     $scope['delete'] = function () {
         $http['delete']('/movies/' + $scope.movie.id).success(function (res) {
             $location.path('/movies');

@@ -80,4 +80,15 @@ describe('Movies', function() {
         expect(repeater('table tbody tr').count()).toBeGreaterThan(0);
     });
 
+    /*it('should be reverse ordered by title', function() {
+        addTestMovies();
+        browser().navigateTo(baseUrl);
+
+        expect(repeater('table.table', 'movie in movies')
+            .column('movie.title')).
+                toEqual(['Cloud Atlas', 'Ted', 'The Dark Knight',
+                    'The Dark Knight Rises', 'The Meerkats',
+                    'Undisputed II: Last Man Standing']);
+    });*/
+
 });
