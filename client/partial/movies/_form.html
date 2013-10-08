@@ -24,8 +24,9 @@
              name="release"
              class="input-block-level"
              ng-model="movie.release"
-             ng-minlength=4
-             min=1900
+             ng-minlength="4"
+             min="1900"
+             placeholder="Release year.. (>1900)"
              required>
       <small class="error"
         ng-show="addMovieForm.release.$error.required">
